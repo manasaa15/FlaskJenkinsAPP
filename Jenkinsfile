@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 script {
-                    git branch: 'main', url: 'file:///C:/Users/YourUser/FlaskApp'
+                    git branch: 'main', url: 'https://github.com/manasaa15/FlaskJenkinsAPP.git'
                 }
             }
         }
