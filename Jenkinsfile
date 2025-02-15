@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+     environment {
+        GIT_REPO = '' // Update withttps://github.com/manasaa15/FlaskJenkinsAPP.gith your repo
+        PATH = "C:\\Windows\\System32;C:\\Program Files\\Git\\bin;"
+    }
+
     stages {
         stage('Clone Repository') {
             steps {
